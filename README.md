@@ -20,3 +20,19 @@ within_tier_language_variance.csv → the within-tier pairwise claims (Punjabi >
 model_comparisons.csv → H4 null result
 ambiguity_comparisons.csv → H5 null result (overall and per-tier)
 analysis_log.txt → full console log of everything above
+
+**regressions.py**
+
+Inputs: same per-language evaluation CSVs as descriptive_analysis.py
+
+Figure outputs:
+
+figure_regressions_horizontal.pdf/.png → Figure 2 (odds-ratio forest plot, confirmatory tier row + exploratory region row × three dimensions)
+
+Table/stats outputs:
+
+regression_confirmatory.csv → Table 6 (confirmatory ordinal logistic regressions, tier as primary predictor)
+regression_exploratory.csv → Table 7 (exploratory ordinal regressions, region as primary predictor)
+regression_mismatch.csv → Table 8 (logistic regressions predicting checklist mismatch presence, both specifications)
+regression_log.txt → convergence diagnostics, log-likelihoods, AIC values, and McFadden psuedo-R². 
+
