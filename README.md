@@ -36,3 +36,16 @@ regression_exploratory.csv → Table 7 (exploratory ordinal regressions, region 
 regression_mismatch.csv → Table 8 (logistic regressions predicting checklist mismatch presence, both specifications)
 regression_log.txt → convergence diagnostics, log-likelihoods, AIC values, and McFadden psuedo-R². 
 
+**convergence_analysis.py**
+
+Inputs: the seven evaluation CSVs plus error_taxonomy_annotated.json (Label Studio export of the coded open-ended responses)
+
+Figure outputs:
+
+figure_worst_problems_profile.pdf/.png → Figure 9 (convergence profile of the 15 worst problems: Likert composite, checklist flag rate, and taxonomy error rate as badness percentile ranks with the 0.75 threshold line)
+
+Table/stats outputs:
+
+convergence_scores_overall.csv → underlying data for Figure 9
+convergence_scores_by_language.csv → per-language convergence ranks
+
