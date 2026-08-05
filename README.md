@@ -3,23 +3,23 @@ Repo for AIES/AAAI Beyond the Language Tier: A Survey Study of Culturally Situat
 
 **descriptive_analysis.py** 
 
-Inputs: per-language cleaned evaluation CSVs (03 Cleaned Survey/Evaluation Dataset/{language}_evaluations.csv)
+Inputs: per-language CSVs 
 
 Figure outputs:
 
-figure1_within_tier.pdf/.png → Figure 1 (mean ratings by language, grouped by tier, region-coded markers with bootstrap CIs)
-figure_checklist_frequencies_{language}.pdf/.png (7 files) → Figures 5, 6, 7 (per-language checklist mismatch profiles for Italy, Pakistan, India)
+figure1_within_tier.pdf: Figure 1 (mean ratings by language, grouped by tier, region-coded markers with bootstrap CIs)
+figure_checklist_frequencies_{language}.pdf (7 files): Figures 5, 6, 7 (per-language checklist mismatch profiles for Italy, Pakistan, India)
 
 Table/stats outputs:
 
-descriptive_summary.csv → Table 1 (mean/SD/median/CI by language, tier, region; also contains model, ambiguity, and complexity breakdowns beyond what's tabled)
-checklist_frequencies.csv → Table 5 (checklist frequencies by tier) 
-resource_tier_comparisons.csv → Kruskal–Wallis and pairwise MWU results for H1–H3 (LQ H = 9.58, CA H = 14.62, RP H = 1.53)
-region_comparisons.csv → exploratory region-level KW/MWU results
-within_tier_language_variance.csv → the within-tier pairwise claims (Punjabi > Urdu, Sindhi < Sicilian, Bengali > Hindi) that motivate the region analysis
-model_comparisons.csv → H4 null result
-ambiguity_comparisons.csv → H5 null result (overall and per-tier)
-analysis_log.txt → full console log of everything above
+descriptive_summary.csv: Table 1 (mean/SD/median/CI by language, tier, region; also contains model, ambiguity, and complexity)
+checklist_frequencies.csv: Table 5 (checklist frequencies by tier) 
+resource_tier_comparisons.csv: Kruskal–Wallis and pairwise MWU results for H1–H3
+region_comparisons.csv: exploratory region-level KW/MWU results
+within_tier_language_variance.csv: the within-tier pairwise claims that motivate the region analysis
+model_comparisons.csv: H4 null result
+ambiguity_comparisons.csv: H5 null result (overall and per-tier)
+analysis_log.txt: full console log of everything above
 
 **regressions.py**
 
@@ -27,14 +27,14 @@ Inputs: same per-language evaluation CSVs as descriptive_analysis.py
 
 Figure outputs:
 
-figure_regressions_horizontal.pdf/.png → Figure 2 (odds-ratio forest plot, confirmatory tier row + exploratory region row × three dimensions)
+figure_regressions_horizontal.pdf: Figure 2 (odds-ratio forest plot, confirmatory tier row + exploratory region row x three dimensions)
 
 Table/stats outputs:
 
-regression_confirmatory.csv → Table 6 (confirmatory ordinal logistic regressions, tier as primary predictor)
-regression_exploratory.csv → Table 7 (exploratory ordinal regressions, region as primary predictor)
-regression_mismatch.csv → Table 8 (logistic regressions predicting checklist mismatch presence, both specifications)
-regression_log.txt → convergence diagnostics, log-likelihoods, AIC values, and McFadden psuedo-R². 
+regression_confirmatory.csv: Table 6 (confirmatory ordinal logistic regressions, tier as primary predictor)
+regression_exploratory.csv: Table 7 (exploratory ordinal regressions, region as primary predictor)
+regression_mismatch.csv: Table 8 (logistic regressions predicting checklist mismatch presence, both specifications)
+regression_log.txt: convergence diagnostics, log-likelihoods, AIC values, and McFadden psuedo-R squared. 
 
 **convergence_analysis.py**
 
@@ -42,12 +42,12 @@ Inputs: the seven evaluation CSVs plus error_taxonomy_annotated.json (Label Stud
 
 Figure outputs:
 
-figure_worst_problems_profile.pdf/.png → Figure 9 (convergence profile of the 15 worst problems: Likert composite, checklist flag rate, and taxonomy error rate as badness percentile ranks with the 0.75 threshold line)
+figure_worst_problems_profile.pdf: Figure 9 (convergence profile of the 15 worst problems: Likert composite, checklist flag rate, and taxonomy error rate as badness percentile ranks)
 
 Table/stats outputs:
 
-convergence_scores_overall.csv → underlying data for Figure 9
-convergence_scores_by_language.csv → per-language convergence ranks
+convergence_scores_overall.csv: underlying data for Figure 9
+convergence_scores_by_language.csv: per-language convergence ranks
 
 **errortaxonomy.py**
 
@@ -55,16 +55,16 @@ Inputs: the seven evaluation CSVs plus the annotated Label Studio JSON
 
 Figure outputs:
 
-figure_frequencies.pdf/.png → Figure 3 (top 20 error labels by frequency, colored by supercategory)
-figure_detection_gap_triplet.pdf/.png → Figure 4 (detection gap panels for Grammar/Culture/Math with bootstrap CIs and dimension-mean reference lines)
-figure_total_errors_by_language.pdf/.png → Figure 8 (stacked taxonomy error counts by language; source of the 454/362/205 in-text numbers)
-figure_frequencies_{language}.pdf/.png (7 files) → per-language taxonomy profiles
+figure_frequencies.pdf: Figure 3 (top 20 error labels by frequency, colored by supercategory)
+figure_detection_gap_triplet.pdf: Figure 4 (detection gap panels for Grammar/Culture/Math with bootstrap CIs and dimension-mean reference lines)
+figure_total_errors_by_language.pdf: Figure 8 (stacked taxonomy error counts by language)
+figure_frequencies_{language}.pdf: per-language taxonomy profiles
 
 Table/stats outputs:
 
-detection_gap.csv → Table 4 (all labels with n, mean, CI, Δ) and the data behind Figure 4
-label_frequencies.csv → Figure 3 
-worst_questions_by_language.csv / worst_questions_overall.csv → supporting data for the worst-problem discussion 
+detection_gap.csv: Table 4 (all labels with n, mean, CI, Δ) and the data behind Figure 4
+label_frequencies.csv: Figure 3 
+worst_questions_by_language.csv / worst_questions_overall.csv: supporting data for the worst-problem discussion 
 
 **correlations.py**
 
@@ -72,4 +72,4 @@ Inputs: the seven evaluation CSVs
 
 Outputs:
 
-spearman_correlations.csv → Table 3 in full (pairwise Spearman ρ for LQ–CA, LQ–RP, CA–RP with 95% bootstrap CIs, disaggregated overall, by tier, by region, and by language). 
+spearman_correlations.csv: Table 3 in full (pairwise Spearman for LQ–CA, LQ–RP, CA–RP with 95% bootstrap CIs, disaggregated overall, by tier, by region, and by language). 
