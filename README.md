@@ -62,7 +62,7 @@ figure_frequencies_{language}.pdf: per-language taxonomy profiles
 
 Table/stats outputs:
 
-detection_gap.csv: Table 4 (all labels with n, mean, CI, Δ) and the data behind Figure 4
+detection_gap.csv: Table 4 (all labels with n, mean, CI, delta) and the data behind Figure 4
 label_frequencies.csv: Figure 3 
 worst_questions_by_language.csv / worst_questions_overall.csv: supporting data for the worst-problem discussion 
 
