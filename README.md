@@ -1,7 +1,7 @@
 # MWP_Survey_Paper
 Repo for AIES/AAAI Beyond the Language Tier: A Survey Study of Culturally Situated Resource Scarcity in Math Word Problem Adaptation
 
-descriptive_analysis.py 
+**descriptive_analysis.py** 
 
 Inputs: per-language cleaned evaluation CSVs (03 Cleaned Survey/Evaluation Dataset/{language}_evaluations.csv)
 
