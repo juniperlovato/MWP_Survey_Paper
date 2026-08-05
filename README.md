@@ -65,3 +65,11 @@ Table/stats outputs:
 detection_gap.csv → Table 4 (all labels with n, mean, CI, Δ) and the data behind Figure 4
 label_frequencies.csv → Figure 3 
 worst_questions_by_language.csv / worst_questions_overall.csv → supporting data for the worst-problem discussion 
+
+**correlations.py**
+
+Inputs: the seven evaluation CSVs
+
+Outputs:
+
+spearman_correlations.csv → Table 3 in full (pairwise Spearman ρ for LQ–CA, LQ–RP, CA–RP with 95% bootstrap CIs, disaggregated overall, by tier, by region, and by language). 
