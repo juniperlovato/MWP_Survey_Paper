@@ -17,10 +17,10 @@ def log(msg=""):
     print(msg)
     log_lines.append(str(msg))
 
-BASE = "."
+BASE = "filepath"
 
-EVAL_DIR    = f"{BASE}/03 Cleaned Survey/Evaluation Dataset"
-DESC_OUT    = f"{BASE}/Figures_Outputs/Descriptive_Analysis"
+EVAL_DIR    = f"{BASE}/filepath"
+DESC_OUT    = f"{BASE}/filepath"
 os.makedirs(DESC_OUT, exist_ok=True)
 
 FILES = {
