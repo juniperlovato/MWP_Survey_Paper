@@ -49,3 +49,19 @@ Table/stats outputs:
 convergence_scores_overall.csv → underlying data for Figure 9
 convergence_scores_by_language.csv → per-language convergence ranks
 
+**errortaxonomy.py**
+
+Inputs: the seven evaluation CSVs plus the annotated Label Studio JSON
+
+Figure outputs:
+
+figure_frequencies.pdf/.png → Figure 3 (top 20 error labels by frequency, colored by supercategory)
+figure_detection_gap_triplet.pdf/.png → Figure 4 (detection gap panels for Grammar/Culture/Math with bootstrap CIs and dimension-mean reference lines)
+figure_total_errors_by_language.pdf/.png → Figure 8 (stacked taxonomy error counts by language; source of the 454/362/205 in-text numbers)
+figure_frequencies_{language}.pdf/.png (7 files) → per-language taxonomy profiles
+
+Table/stats outputs:
+
+detection_gap.csv → Table 4 (all labels with n, mean, CI, Δ) and the data behind Figure 4
+label_frequencies.csv → Figure 3 
+worst_questions_by_language.csv / worst_questions_overall.csv → supporting data for the worst-problem discussion 
