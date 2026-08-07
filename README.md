@@ -1,5 +1,27 @@
-# MWP_Survey_Paper
-Repo for AIES/AAAI Beyond the Language Tier: A Survey Study of Culturally Situated Resource Scarcity in Math Word Problem Adaptation
+#Materials for:
+
+Lovato, J., & Suchdev, P. (2026). Beyond Language Resource Tier: A Survey Study of Culturally Situated Resource Scarcity in LLM-Generated Cultural Translation of Math Word Problems. In Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES 2026).
+
+This repository contains the analysis code, supplementary tables/figures, and survey materials accompanying the paper. It serves as the official supplementary archive referenced in the camera-ready version.
+
+Preregistration: OSF [STUDY00003740] ([(https://doi.org/10.17605/OSF.IO/4WE78)](https://doi.org/10.17605/OSF.IO/4WE78))
+Paper: arXiv link forthcoming; proceedings link to be added upon publication
+Contact: jlovato@uvm.edu
+
+**Extended_version_of_manuscript_AIES.pdf**
+
+Full extended version of the paper with supplementary materials 
+
+**Surveys (folder)**
+
+Bengali_India.pdf, Hindi_India.pdf, Italian_Italy.pdf, Punjabi_India.pdf, Sicilian_Italy.pdf, Sindhi_Pakistan.pdf, Urdu_Pakistan.pdf
+
+All surveys implemented in qualtrics. For .qsf files please contact the authors
+
+**Files (folder)**
+bengali_evaluations.csv, hindi_evaluations.csv, italian_evaluations.csv, punjabi_evaluations.csv, sicilian_evaluations.csv, sindhi_evaluations.csvurdu_evaluations.csv
+
+Survey response data, for access to the error taxonomy .json please contact the authors 
 
 **descriptive_analysis.py** 
 
