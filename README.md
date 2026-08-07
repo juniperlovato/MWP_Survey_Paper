@@ -16,7 +16,7 @@ Full extended version of the paper with supplementary materials
 
 Bengali_India.pdf, Hindi_India.pdf, Italian_Italy.pdf, Punjabi_India.pdf, Sicilian_Italy.pdf, Sindhi_Pakistan.pdf, Urdu_Pakistan.pdf
 
-All surveys implemented in qualtrics. For .qsf files please contact the authors
+All surveys implemented in qualtrics. For .qsf files, please contact the authors. To find all the translations of the math word problems in the different languages that we ported into the surveys please refer to https://github.com/juniperlovato/qualtrics-txt-files
 
 **Files (folder)**
 bengali_evaluations.csv, hindi_evaluations.csv, italian_evaluations.csv, punjabi_evaluations.csv, sicilian_evaluations.csv, sindhi_evaluations.csvurdu_evaluations.csv
